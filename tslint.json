@@ -1,0 +1,12 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended"],
+  "jsRules": {},
+  "rules": {
+    "quotemark": [true, "single", "jsx-single"], // 引号使用单引号形式
+    "trailing-comma": [true, "never"], // 对象结束后不需要逗号
+    "only-arrow-functions": false, // 允许使用传统（非箭头）函数表达式
+    "no-console": false // 允许使用 console.log(), 用于调试
+  },
+  "rulesDirectory": []
+}

@@ -1,0 +1,31 @@
+{
+  "name": "simple-login-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch 'src/' -e ts --exec 'ts-node' ./src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liyuezu/simple-login-node.git"
+  },
+  "author": "Cooper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liyuezu/simple-login-node/issues"
+  },
+  "homepage": "https://github.com/liyuezu/simple-login-node#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "nodemon": "^1.19.1",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.2"
+  }
+}
