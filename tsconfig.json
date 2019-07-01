@@ -61,5 +61,7 @@
     /* Experimental Options */
     // "experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
     // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
-  }
+  },
+  "include": ["src"], // 需要编译的 ts 文件，这里设置为 src 目录下的所有文件
+  "exclude": ["node_modules"] // 编译需要排除的文件目录
 }
