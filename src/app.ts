@@ -5,6 +5,7 @@ import { NextFunction, Request, Response } from 'express'; // express 申明文�
 
 // 自定义模块
 import { systemConfig } from './config';
+import { dbTools } from './utils';
 
 const app = express();
 
@@ -16,6 +17,9 @@ app.use(bodyParser.json({ limit: '20mb' }));
 app.use(function(err: Error, req: Request, res: Response, next: NextFunction) {
   return res.sendStatus(500);
 });
+
+// 连接数据库
+dbTools.connectMongo();
 
 app.listen(systemConfig.port, function() {
   console.log(`the server is start at port ${systemConfig.port}`);
